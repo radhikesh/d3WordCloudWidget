@@ -93,7 +93,7 @@ HTMLWidgets.widget({
     s = d3.scale.linear().domain([1,maxFreq]).range([10, 90]);
     cloud = d3.layout.cloud().size([width, height])
               .words(df)
-              .padding(1)
+              .padding(5)
               .rotate(function() { return ~~(Math.random() * 2) * 0; })
                .text(function(d) { return d.text; })
               .font("Impact")
